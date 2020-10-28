@@ -4,7 +4,7 @@ class ProductRepository {
     }
 
     async createProduct(data) {
-        return await this.produtoModel.create(data);
+        return await this.productModel.create(data);
     }
 }
 
