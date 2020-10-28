@@ -1,4 +1,5 @@
-const joi = require('@hapi/joi');
+//const joi = require('@hapi/joi');
+const joi = require('joi');
 
 module.exports = () => ({
     params: joi.object().keys({

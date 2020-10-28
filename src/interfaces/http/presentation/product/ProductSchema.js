@@ -1,5 +1,6 @@
-const joi = require('@hapi/joi')
-    .extend(require('@hapi/joi-date'));
+//const joi = require('src/interfaces/http/presentation/product/@hapi/joi')
+//.extend(require('src/interfaces/http/presentation/product/@hapi/joi-date'));
+const joi = require('joi');
 
 module.exports = () => ({
     create: joi.object().keys({

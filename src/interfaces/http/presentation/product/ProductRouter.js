@@ -1,11 +1,11 @@
 module.exports = ({ container }) => {
-    const ctx = container.container;
+    const ctx = container.cradle;
     return [{
         method: 'post',
         path: '/',
         validation: {
-            body: ctx.produtoSchema.create,
+            body: ctx.productSchema.create,
         },
-        handler: ctx.produtoController.createProduto
+        handler: ctx.productController.createProduct
     }]
 }

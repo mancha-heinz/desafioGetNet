@@ -24,7 +24,7 @@ module.exports = ({
         .use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerJsdoc(swaggerOptions)))
         .use('/api/ceps', container.cradle.routerRegister.register(container.cradle.cepRouter))
         .use('/api/users', container.cradle.routerRegister.register(container.cradle.userRouter))
-        .use('/api/produtos', container.cradle.routerRegister.register(container.cradle.produtoRouter)) //rota produtos
+        .use('/api/products', container.cradle.routerRegister.register(container.cradle.productRouter)) //rota produtos
         .use((req, res, next) => { next(exception.notFound()); })
         .use(httpErrorMiddleware);
 
