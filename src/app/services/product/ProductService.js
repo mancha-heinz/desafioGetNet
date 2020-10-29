@@ -1,11 +1,12 @@
-module.exports = ({ ProductRepository }) => ({
+//const ProductRepository = require('src/infra/database/repository/ProductRepository');
+module.exports = ({ productRepository }) => ({
     createProduct: async (data) => {
-        return await ProductRepository.createProduct(data);
+        return await productRepository.createProduct(data);
     },
     deleteProduct: async (data) => {
-        return await ProductRepository.deleteProduct(data);
+        return await productRepository.deleteProduct(data);
     },
     getProduct: async product => {
-        return await ProductRepository.getProduct(product);
+        return await productRepository.getProduct(product);
     }
 });
